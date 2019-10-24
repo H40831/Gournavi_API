@@ -1,0 +1,40 @@
+#app{
+	width: 100%;
+	box-sizing: border-box;
+}
+ul {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100vw;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 20px 0 0 0;
+}
+li {
+ 	list-style: none;
+ 	box-sizing: border-box;
+ 	flex-basis: calc((100% / 4) - 40px);
+ }
+ img {
+ 	border-radius: 3px;
+ 	width: 200px;
+ 	height: 200px;
+ 	object-fit: cover;
+ }
+.results {
+ 	border-radius: 6px;
+ 	box-shadow: 0 0 8px gray;
+ 	padding: 20px;
+ 	margin: 0 40px 40px 0;
+ }
+ p{
+ 	margin: 0;
+ }
+ .name {
+ 	font-weight: bold;
+ 	height: 5em;
+ }
+ .access {
+ 	font-size: .8em;
+ 	height: 2em;
+ }

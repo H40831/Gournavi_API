@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>XHACK勉強会</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+  </head>
+  <body>
+    <h1>ぐるなびAPI検索</h1>
+    <div id="app">
+      <select v-model="pref_code">
+        <option v-for="prefecture in prefectures" :value="prefecture.pref_code">
+          {{prefecture.pref_name}}
+        </option>
+      </select>
+      <input type="text" v-model="freeword" @keyup.enter="search">
+       > Enter
+      <ul>
+        <li v-for="rest in rests">
+          <shop-template class="results" :shop="rest">
+        </li>
+      </ul>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
